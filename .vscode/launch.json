@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Calculate",
+            "request": "launch",
+            "mainClass": "calculate.Calculate",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base",
+            "request": "launch",
+            "mainClass": "task1.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(1)",
+            "request": "launch",
+            "mainClass": "task10.Base",
+            "projectName": "advent-of-code-2023_354653d4",
+            "vmArgs": "-Xss16m"
+        },
+        {
+            "type": "java",
+            "name": "Base(2)",
+            "request": "launch",
+            "mainClass": "task2.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(3)",
+            "request": "launch",
+            "mainClass": "task3.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(4)",
+            "request": "launch",
+            "mainClass": "task4.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(5)",
+            "request": "launch",
+            "mainClass": "task5.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(6)",
+            "request": "launch",
+            "mainClass": "task6.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(7)",
+            "request": "launch",
+            "mainClass": "task7.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(8)",
+            "request": "launch",
+            "mainClass": "task8.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base(9)",
+            "request": "launch",
+            "mainClass": "task9.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        }
+    ]
+}
