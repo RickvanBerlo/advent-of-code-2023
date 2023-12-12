@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "cheat",
+            "request": "launch",
+            "mainClass": "task10.cheat",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -30,7 +37,7 @@
             "request": "launch",
             "mainClass": "task10.Base",
             "projectName": "advent-of-code-2023_354653d4",
-            "vmArgs": "-Xss16m"
+            "vmArgs": "-Xss32m"
         },
         {
             "type": "java",

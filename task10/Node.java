@@ -8,6 +8,8 @@ public class Node {
     public int y;
     public int x;
     public int weight = Integer.MAX_VALUE;
+    public boolean loop = false;
+    public boolean outside = false;
     public Map<Direction, Node> directions = new HashMap<>();
 
 
@@ -43,10 +45,52 @@ public class Node {
             if(directions.get(previousDirection) == null){
                 return 0;
             } else if(this.pipe.equals(Pipe.STARTING)) {
+                this.loop = true;
                 return steps;
             } else {
-                return directions.entrySet().stream().filter(entry -> entry.getKey() != previousDirection).map(entry -> entry.getValue().getDistance(steps + 1, Direction.getOpposite(entry.getKey()))).mapToInt(v -> v).findFirst().getAsInt();
+                int tmp = directions.entrySet().stream().filter(entry -> entry.getKey() != previousDirection).map(entry -> entry.getValue().getDistance(steps + 1, Direction.getOpposite(entry.getKey()))).mapToInt(v -> v).findFirst().getAsInt();
+                if(tmp != 0){
+                    this.loop = true;
+                }
+                return tmp;
             }
         }
+    }
+
+    public void checkIfInsideLoop(Node[][] map){
+        if((y - 1) > -1 && (y + 1) < map.length){
+            if((x - 1) > -1 && (x + 1) < map[y].length){
+                if(!map[y - 1][x - 1].loop){
+                    outside = true;
+                }
+                if(!map[y - 1][x].loop){
+                    outside = true;
+                }
+                if(!map[y - 1][x +1].loop){
+                    outside = true;
+                }
+                if(!map[y][x -1].loop){
+                    outside = true;
+                }
+                if(!map[y][x + 1].loop){
+                    outside = true;
+                }
+                if(!map[y + 1][x - 1].loop){
+                    outside = true;
+                }
+                if(!map[y + 1][x].loop){
+                    outside = true;
+                }
+                if(!map[y + 1][x + 1].loop){
+                    outside = true;
+                }
+
+            } else {
+                outside = true;
+            }
+        } else {
+            outside = true;
+        }
+                
     }
 }
