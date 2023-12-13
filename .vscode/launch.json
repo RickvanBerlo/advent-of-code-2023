@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Base",
             "request": "launch",
+            "mainClass": "task13.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
+            "name": "Base",
+            "request": "launch",
             "mainClass": "task12.Base",
             "projectName": "advent-of-code-2023_354653d4"
         },
