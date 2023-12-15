@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Base",
+            "request": "launch",
+            "mainClass": "task15.Base",
+            "projectName": "advent-of-code-2023_354653d4"
+        },
+        {
+            "type": "java",
             "name": "Cheat",
             "request": "launch",
             "mainClass": "task14.Cheat",
